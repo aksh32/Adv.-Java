@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <center>
+            <h1>Personal Details</h1>
+            <form method="POST" action="PersonalScore1">
+                Enter First Name:<input type="text" name="fname"><br><br>
+                Enter Last Name:<input type="text" name="lname"><br><br>
+                Enter Email Add:<input type="text" name="email"><br><br>
+                Select Age Group:<select name="agegrp">
+                                    <option value="1">18-22</option>
+                                    <option value="2">23-27</option>
+                                    <option value="1">28-30</option>
+                                    <option value="1">31-35</option>
+                                </select><br><br>
+                Select Citizenship:<select name="citizenship">
+                                        <option>American</option>
+                                        <option>African</option>
+                                        <option>Indian</option>
+                                        <option>Pakistani</option>
+                                    </select><br><br>
+                Marital Status:<input type="radio" name="maritstat" value="married">Married
+                               <input type="radio" name="maritstat" value="unmarried">UnMarried<br><br>
+                No. of Childrens:<select name="NoOfChild">
+                                    <option value="1">0</option>
+                                    <option value="2">1-2</option>
+                                    <option value="3">3-5</option>
+                               </select><br><br>
+                <input type="submit" value="submit">
+            </form>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>PersonalScore1</servlet-name>
+        <servlet-class>PersonalScore1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EduScore1</servlet-name>
+        <servlet-class>EduScore1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>invalidScore</servlet-name>
+        <servlet-class>invalidScore</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PersonalScore1</servlet-name>
+        <url-pattern>/PersonalScore1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EduScore1</servlet-name>
+        <url-pattern>/EduScore1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>invalidScore</servlet-name>
+        <url-pattern>/invalidScore</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
