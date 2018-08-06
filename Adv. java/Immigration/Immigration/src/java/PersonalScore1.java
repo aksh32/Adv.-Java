@@ -30,7 +30,11 @@ public class PersonalScore1 extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int points = 0;
+        
+        
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            int points = 0;
         String fname = request.getParameter("fname");
         String lname= request.getParameter("lname");
         String name = fname+" "+lname;
@@ -87,9 +91,6 @@ public class PersonalScore1 extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("invalidScore");
             rd.forward(request, response);
         }
-        
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");

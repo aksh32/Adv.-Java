@@ -12,9 +12,12 @@ and open the template in the editor.
     </head>
     <body>
         <center>
-            <h1>Educational Details</h1>
+            <h2>Please Provide Your Educational Details</h2>
+            <fieldset style='width: 600px'>
+                <legend>Educational Details</legend>
+                <br>
             <form action="EduScore1" method="POST">
-                <fieldset>
+                <fieldset style='width: 400px'>
                     <legend>Language Proficiency</legend>
                     English: <input type="checkbox" name="engW" value="Writing">Writing
                              <input type="checkbox" name="engR" value="Reading">Reading
@@ -29,7 +32,7 @@ and open the template in the editor.
                 </fieldset>
                 <br><br>
                 
-                <fieldset>
+                <fieldset style='width: 400px'>
                     <legend>Degree & Experience</legend>
                     Highest Degree:<select name="deg">
                                         <option value="1">Masters</option>
@@ -47,8 +50,11 @@ and open the template in the editor.
                                         <option value="5">Above 10</option>
                                     </select>
                 </fieldset>
+                <br>
+                <br>
                 <input type="submit" value="Submit">
             </form>
+            </fieldset>
         </center>
     </body>
 </html>

@@ -41,12 +41,13 @@ public class invalidScore extends HttpServlet {
             out.println("<body>");
             out.println("<center>");
             String check = ses.getAttribute("page").toString();
+            String name = (String) ses.getAttribute("name");
             
             if(check.compareTo("PersonalScore1")==0){
-                out.println("<h1> Your Personal Score is Invalid</h1>");
+                out.println("<h1>Sorry!</h1><h3> "+name+"</h3><h1> Your Personal Score is Invalid</h1>");
             }
             if(check.compareTo("EduScore1")==0){
-                out.println("<h1> Your Educational Score is Invalid</h1>");
+                out.println("<h1>Sorry!</h1><h3> "+name+"</h3><h1> Your Educational Score is Invalid</h1>");
             }
             out.println("</center>");
             out.println("</body>");

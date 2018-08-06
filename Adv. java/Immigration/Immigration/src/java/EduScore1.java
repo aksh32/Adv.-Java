@@ -31,7 +31,10 @@ public class EduScore1 extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        HttpSession ses = request.getSession();
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            HttpSession ses = request.getSession();
         
    
         int points = Integer.parseInt(ses.getAttribute("Points").toString());
@@ -102,9 +105,6 @@ public class EduScore1 extends HttpServlet {
         
         ses.setAttribute("page","EduScore1");
         
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
             if(points>=35){
             out.println("<!DOCTYPE html>");
             out.println("<html>");
