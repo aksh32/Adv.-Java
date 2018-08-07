@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ice Cream Shop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <center>
+            <h1>Welcome To Ice Cream Shop</h1>
+            <h3>Place Your Order</h3>
+            <br>
+            <br>
+            <fieldset style="width: 500px">
+                <legend align="left">Order Details</legend>
+                <form method="POST" action="OrderProcessing">
+                    <label for="falvor">Select Flavor:</label>
+                    <select name="flavor">
+                        <option value="Vanilla">Vanilla</option>
+                        <option value="Strawberry">Strawberry</option>
+                        <option value="Kiwi">Kiwi</option>
+                        <option value="Mango">Mango</option>
+                        <option value="Chocolate">Chocolate</option>
+                    </select>
+                    <br>
+                    <br>            
+                    <label for="size">Select Size of Party Pack:</label>
+                    <select name="size">
+                        <option value="1">250</option>
+                        <option value="2">500</option>
+                        <option value="3">1</option>
+                        <option value="4">2</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="qty">Enter Quantity:</label>
+                    <input type="text" name="qty">
+                    <br>
+                    <br>
+                    <input type="submit" value="Buy">
+                </form>
+            </fieldset>
+        </center>
+    </body>
+</html>
