@@ -31,7 +31,6 @@ public class OrderPlaced extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-<<<<<<< HEAD
         HttpSession session = request.getSession();
             
             if((session.getAttribute("page").toString()).equals("customer")){
@@ -43,22 +42,6 @@ public class OrderPlaced extends HttpServlet {
                 session.setAttribute("cadd", request.getParameter("add"));
             }
         try (PrintWriter out = response.getWriter()) {
-            
-            
-=======
-        try (PrintWriter out = response.getWriter()) {
-            
-            HttpSession session = request.getSession();
-            
-            if(session.getAttribute("page").toString().equals("customer")){
-                Cookie cname = new Cookie("cname",request.getParameter("cname"));
-                Cookie cadd = new Cookie("cadd",request.getParameter("cadd"));
-                response.addCookie(cname);
-                response.addCookie(cadd);
-                session.setAttribute("cname", request.getParameter("cname"));
-                session.setAttribute("cadd", request.getParameter("cadd"));
-            }
->>>>>>> 13cc87430928da53f44ee6ab92282c0797efed80
             
             out.println("<!DOCTYPE html>");
             out.println("<html>");
@@ -82,11 +65,6 @@ public class OrderPlaced extends HttpServlet {
             out.println("<td>"+ session.getAttribute("flavor") +"</td>");
             out.println("</tr>");
             out.println("</table>");
-<<<<<<< HEAD
-            out.println("<br>");
-            out.println("<br>");
-=======
->>>>>>> 13cc87430928da53f44ee6ab92282c0797efed80
             out.println("</center>");
             out.println("</body>");
             out.println("</html>");
