@@ -31,18 +31,17 @@ public class OrderPlaced extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
+        HttpSession session = request.getSession();
             
-            HttpSession session = request.getSession();
-            
-            if(session.getAttribute("page").toString().equals("customer")){
-                Cookie cname = new Cookie("cname",request.getParameter("cname"));
-                Cookie cadd = new Cookie("cadd",request.getParameter("cadd"));
+            if((session.getAttribute("page").toString()).equals("customer")){
+                Cookie cname = new Cookie("cname",request.getParameter("name"));
+                Cookie cadd = new Cookie("cadd",request.getParameter("add"));
                 response.addCookie(cname);
                 response.addCookie(cadd);
-                session.setAttribute("cname", request.getParameter("cname"));
-                session.setAttribute("cadd", request.getParameter("cadd"));
+                session.setAttribute("cname", request.getParameter("name"));
+                session.setAttribute("cadd", request.getParameter("add"));
             }
+        try (PrintWriter out = response.getWriter()) {
             
             out.println("<!DOCTYPE html>");
             out.println("<html>");

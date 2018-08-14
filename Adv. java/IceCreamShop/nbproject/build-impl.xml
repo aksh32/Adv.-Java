@@ -1358,7 +1358,11 @@ exists or setup the property manually. For example like this:
         <mkdir dir="${build.test.results.dir}"/>
     </target>
     <target depends="init,compile-test,-pre-test-run" if="have.tests" name="-do-test-run">
+<<<<<<< HEAD
+        <webproject2:test includes="${includes}" testincludes="**/*Test.java"/>
+=======
         <webproject2:test testincludes="**/*Test.java"/>
+>>>>>>> 13cc87430928da53f44ee6ab92282c0797efed80
     </target>
     <target depends="init,compile-test,-pre-test-run,-do-test-run" if="have.tests" name="-post-test-run">
         <fail if="tests.failed" unless="ignore.failing.tests">Some tests failed; see details above.</fail>

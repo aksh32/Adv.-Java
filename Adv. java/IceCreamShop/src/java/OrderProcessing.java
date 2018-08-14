@@ -83,8 +83,8 @@ public class OrderProcessing extends HttpServlet {
             Cookie ck[] = request.getCookies();
             
             if(ck!=null){
-                String cookieName = null;
                 for(Cookie ck1:ck){
+                    String cookieName = null;
                     cookieName = ck1.getName();
                     if(cookieName.equals("cname")){
                         name = ck1.getValue();
