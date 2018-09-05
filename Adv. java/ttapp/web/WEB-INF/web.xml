@@ -8,6 +8,10 @@
         <servlet-name>editTT</servlet-name>
         <servlet-class>editTT</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ViewTT</servlet-name>
+        <servlet-class>ViewTT</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddTT</servlet-name>
         <url-pattern>/AddTT</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>editTT</servlet-name>
         <url-pattern>/editTT</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewTT</servlet-name>
+        <url-pattern>/ViewTT</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
