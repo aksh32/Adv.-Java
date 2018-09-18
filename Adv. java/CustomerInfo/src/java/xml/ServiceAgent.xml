@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<agents>
+    <agent id = 1>
+        <username>akki</username>
+        <password>akki</password>
+        <name>Akshay</name>
+        <department>IT</department>
+    </agent>
+    <agent id = 2>
+        <username>dev</username>
+        <password>dev</password>
+        <name>Devanshu</name>
+        <department>Tech Support</department>
+    </agent>
+    <agent id = 3>
+        <username>sai</username>
+        <password>saiP</password>
+        <name>SaiPrasad</name>
+        <department>Sales</department>
+    </agent>
+</agents>
