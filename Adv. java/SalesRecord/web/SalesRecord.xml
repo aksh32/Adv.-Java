@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<sales>
+    <record id="1">
+        <firstname>akshay</firstname>
+        <country>india</country>
+        <sale>
+            <quarter>
+                <id>1</id>
+                <amount>50000</amount>
+            </quarter>
+            <quarter>
+                <id>2</id>
+                <amount>40000</amount>
+            </quarter>
+            <quarter>
+                <id>3</id>
+                <amount>100000</amount>
+            </quarter>
+            <quarter>
+                <id>4</id>
+                <amount>80000</amount>
+            </quarter>
+        </sale>
+    </record>
+    <record id="2">
+        <firstname>dev</firstname>
+        <country>UK</country>
+        <sale>
+            <quarter>
+                <id>1</id>
+                <amount>45000</amount>
+            </quarter>
+            <quarter>
+                <id>2</id>
+                <amount>35000</amount>
+            </quarter>
+            <quarter>
+                <id>3</id>
+                <amount>85000</amount>
+            </quarter>
+            <quarter>
+                <id>4</id>
+                <amount>84578</amount>
+            </quarter>
+        </sale>
+    </record>
+    <record id="3">
+        <firstname>saiprasad</firstname>
+        <country>USA</country>
+        <sale>
+            <quarter>
+                <id>1</id>
+                <amount>45850</amount>
+            </quarter>
+            <quarter>
+                <id>2</id>
+                <amount>574890</amount>
+            </quarter>
+            <quarter>
+                <id>3</id>
+                <amount>98015</amount>
+            </quarter>
+            <quarter>
+                <id>4</id>
+                <amount>47000</amount>
+            </quarter>
+        </sale>
+    </record>
+    <record id="4">
+        <firstname>Mayur</firstname>
+        <country>China</country>
+        <sale>
+            <quarter>
+                <id>1</id>
+                <amount>87000</amount>
+            </quarter>
+            <quarter>
+                <id>2</id>
+                <amount>68450</amount>
+            </quarter>
+            <quarter>
+                <id>3</id>
+                <amount>857470</amount>
+            </quarter>
+            <quarter>
+                <id>4</id>
+                <amount>12540</amount>
+            </quarter>
+        </sale>
+    </record>
+    <record id="5">
+        <firstname>Janak</firstname>
+        <country>Russia</country>
+        <sale>
+            <quarter>
+                <id>1</id>
+                <amount>5250</amount>
+            </quarter>
+            <quarter>
+                <id>2</id>
+                <amount>6870</amount>
+            </quarter>
+            <quarter>
+                <id>3</id>
+                <amount>687901</amount>
+            </quarter>
+            <quarter>
+                <id>4</id>
+                <amount>68740</amount>
+            </quarter>
+        </sale>
+    </record>
+</sales>
