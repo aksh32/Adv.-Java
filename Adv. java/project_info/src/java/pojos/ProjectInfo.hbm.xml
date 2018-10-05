@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 5 Oct, 2018 9:57:19 AM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="pojos.ProjectInfo" table="project_info" catalog="project">
+        <id name="projectId" type="java.lang.Integer">
+            <column name="project_id" />
+            <generator class="identity" />
+        </id>
+        <property name="projectName" type="string">
+            <column name="project_name" length="45" not-null="true" />
+        </property>
+        <property name="clientName" type="string">
+            <column name="client_name" length="45" not-null="true" />
+        </property>
+        <property name="projectManager" type="string">
+            <column name="project_manager" length="45" not-null="true" />
+        </property>
+        <property name="teamSize" type="int">
+            <column name="team_size" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
